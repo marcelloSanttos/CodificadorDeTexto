@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Decodificador ONE T6</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img class="logo" src="./assets/Logo_alura.png" alt="Logo Alura" />
+      </header>
+
+      <div class="campo__input">
+        <div class="input">
+          <textarea
+            id="campo__input__texto"
+            rows="8"
+            cols="35"
+            placeholder="Digite seu texto aqui..."
+          ></textarea>
+          <p class="observacao">
+            <img src="assets/exclamacao.png" alt="Exclamacao"/>
+            Apenas letras minúsculas e sem acento.
+          </p>
+        </div>
+
+        <div id="campo__resposta">
+          <img src="./assets/Lupa.png" alt="Menino com lupa" />
+          <h2>Nenhuma mensagem encontrada</h2>
+          <span
+            >Digite um texto que você deseja criptografar ou
+            descriptografar.</span
+          >
+        </div>
+      </div>
+      <div class="botoes">
+        <div class="campo__botoes">
+          <button onclick="criptografar()" class="botao__criptografar">
+            Criptografar
+          </button>
+          <button onclick="descriptografar()" class="botao__descriptografar">
+            Descriptografar
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="rodape">Desenvolvido por Marcello Santos 2024</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

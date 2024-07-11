@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --cor-primaria: #FFF8F3;
+    --cor-secundaria:#405D72;
+    --cor-terciaria: #FF7E7DC;
+    --cor-botao-descriptografar: #D8DFE8;
+    --cor-texto-a:#343A40;
+    --cor-texto-b: #495057;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Inter' , sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+.logo {
+    max-width: 120px;
+    max-height: 48px;
+    width: auto;
+    height: auto;
+    padding: 2% 0 0 2%;
+}
+
+.campo__input {
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 0 0 4%;
+}
+
+#campo__input__texto {
+    font-size: 32px;
+    color: var(--cor-secundaria);
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0;
+}
+
+.observacao {
+    font-size: 12px;
+    color: var(--cor-texto-b);
+    padding-top: 35%;
+}
+
+#campo__resposta {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-terciaria);
+    border-radius: 32px;
+    width: 350px;
+    height: 500px;
+    margin-right: 3%;
+    gap: 3%;
+    padding: 3%;
+    grid-row: auto;
+    grid-column: auto;
+}
+#campo__resposta h2 {
+    text-align: center;
+    font-size: 24px;
+    color: var(--cor-texto-a);
+    padding: 3%;
+}
+
+#campo__resposta span {
+    text-align: center;
+    font-size: 16px;
+    color: var(--cor-texto-b);
+    padding: 3%;
+}
+
+.campo__resposta__imagem {
+    max-width: 336px;
+    max-height: 304px;
+    width: auto;
+    height: auto;
+}
+
+.botao__criptografar {
+    background-color: var(--cor-secundaria);
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    color: var(--cor-terciaria);
+    font-size: 16px;
+    text-align: center;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.botao__descriptografar {
+    background-color: var(--cor-botao-descriptografar);
+    border-color: var(--cor-secundaria);
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    text-align: center;
+}
+
+#campo__output__texto {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--cor-texto-b);
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0;
+}
+
+.botao__copiar {
+    background-color: var(--cor-terciaria);
+    border-color: var(--cor-secundaria);
+    border-radius: 24px;
+    width: 336px;
+    height: 67px;
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    margin-left: 2%;
+}
+
+.rodape {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    padding: 24px;
+}
